@@ -29,7 +29,7 @@
     //动画绘制对象
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     var codeRainArr = []; //代码雨数组
-    var cols = parseInt(cw / 10); //代码雨列数
+    var cols = parseInt(cw / 30); //代码雨列数
     var step = 30;    //步长，每一列内部数字之间的上下间隔
     ctx.font = "bold 26px microsoft yahei"; //声明字体，个人喜欢微软雅黑
     var stopid=1;
@@ -48,7 +48,7 @@
             //基础位置，为了列与列之间产生错位
             var basePos = parseInt(Math.random() * 300);
             //随机速度 3~13之间
-            var speed = Math.random() *10 + 5;
+            var speed = Math.random() *6 + 9;
             //每组的x轴位置随机产生
             var colx = parseInt(Math.random() * cw)
  
